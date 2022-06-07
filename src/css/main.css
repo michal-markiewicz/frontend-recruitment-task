@@ -1,0 +1,53 @@
+#module-container
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 0 auto;
+    padding: 100px 0px 100px 0px;
+    width: 1440px;
+    max-width: 70vw;
+}
+
+#module-img-container img
+{
+    width: 100%;
+    max-width: 505px;
+}
+
+#module-content-container
+{
+    width: 40%;
+}
+
+#module-content-container h2 
+{
+    font-weight: 700;
+    font-size: 2.625rem;
+    color: #121212;
+    margin: 0px;
+}
+
+#module-content-container p 
+{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #121212;
+    margin: 25px 0px 25px 0px;
+    line-height: 24px;
+    max-width: 380px;
+}
+
+#module-content-container button 
+{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #E4C1AE;
+    color: #fff;
+    padding: 16px 40px 16px 40px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+}
