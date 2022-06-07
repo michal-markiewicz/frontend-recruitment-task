@@ -20,6 +20,7 @@
 #module-content-container
 {
     width: 40%;
+    max-width: 380px;
 }
 
 #module-content-container h2 
@@ -37,7 +38,6 @@
     color: #121212;
     margin: 25px 0px 25px 0px;
     line-height: 24px;
-    max-width: 380px;
 }
 
 #module-content-container button 
@@ -50,4 +50,44 @@
     border: none;
     border-radius: 32px;
     cursor: pointer;
+}
+
+@media (max-width: 1200px)
+{
+    #module-container
+    {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    #module-container
+    {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #module-content-container 
+    {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #module-content-container h2 
+    {
+        font-size: 2rem;
+    }
+
+    #module-content-container p, #module-content-container button 
+    {
+        font-size: 0.875rem;
+    }
+
+    #module-img-container img
+    {
+        width: 100%;
+        max-width: 400px;
+    }
 }
