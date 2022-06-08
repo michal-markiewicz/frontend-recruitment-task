@@ -1,4 +1,4 @@
-#module-container
+.module-container
 {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -11,19 +11,19 @@
     max-width: 70vw;
 }
 
-#module-img-container img
+.module-img-container img
 {
     width: 100%;
     max-width: 505px;
 }
 
-#module-content-container
+.module-content-container
 {
     width: 40%;
     max-width: 380px;
 }
 
-#module-content-container h2 
+.module-content-container h2 
 {
     font-weight: 700;
     font-size: 2.625rem;
@@ -31,7 +31,7 @@
     margin: 0px;
 }
 
-#module-content-container p 
+.module-content-container p 
 {
     font-size: 1rem;
     font-weight: 300;
@@ -40,7 +40,7 @@
     line-height: 24px;
 }
 
-#module-content-container button 
+.module-content-container button 
 {
     font-size: 1rem;
     font-weight: 700;
@@ -52,9 +52,59 @@
     cursor: pointer;
 }
 
+/* Alert Section */
+
+.module-overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(18, 18, 18, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-alert
+{
+    padding: 70px 100px 70px 100px;
+    width: 920px;
+    max-width: 60%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.module-alert h2 
+{
+    color: #121212;
+    font-size: 2.625rem;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.module-alert p 
+{
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.module-alert b 
+{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+
+/* Media Queries */
+
 @media (max-width: 1200px)
 {
-    #module-container
+    .module-container
     {
         max-width: 90vw;
     }
@@ -62,32 +112,39 @@
 
 @media (max-width: 1000px)
 {
-    #module-container
+    .module-container
     {
+        padding: 50px 0px 50px 0px;
         flex-direction: column;
         gap: 40px;
     }
 
-    #module-content-container 
+    .module-content-container 
     {
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
 
-    #module-content-container h2 
+    .module-content-container h2, .module-alert h2 
     {
         font-size: 2rem;
     }
 
-    #module-content-container p, #module-content-container button 
+    .module-content-container p, .module-content-container button, .module-alert p, .module-alert b 
     {
         font-size: 0.875rem;
     }
 
-    #module-img-container img
+    .module-img-container img
     {
         width: 100%;
         max-width: 400px;
+    }
+
+    .module-alert
+    {
+        padding: 70px 30px 70px 30px;
+        max-width: 90%;
     }
 }
